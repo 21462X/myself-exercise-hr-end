@@ -11,5 +11,4 @@ public class VhrDemoApplication {
     public static void main(String[] args) {
         SpringApplication.run(VhrDemoApplication.class, args);
     }
-
 }
