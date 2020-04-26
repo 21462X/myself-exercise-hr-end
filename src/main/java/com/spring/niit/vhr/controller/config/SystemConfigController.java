@@ -1,4 +1,4 @@
-package com.spring.niit.vhr.controller;
+package com.spring.niit.vhr.controller.config;
 
 import com.spring.niit.vhr.model.Menu;
 import com.spring.niit.vhr.service.MenuService;
