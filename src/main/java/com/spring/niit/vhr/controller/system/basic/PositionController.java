@@ -27,7 +27,7 @@ public class PositionController {
     }
 
     @PostMapping("/")
-    @ApiOperation(value = "新增职位", notes = "根据传入的职位添加一个新职位")
+//    @ApiOperation(value = "新增职位", notes = "根据传入的职位添加一个新职位")
     @ApiImplicitParam(name = "position", value = "position对象", required = true)
     public RespBean addPosition(@RequestBody Position position) {
         if(positionService.addPosition(position) == 1 ) {
@@ -51,7 +51,7 @@ public class PositionController {
 
     @DeleteMapping("/{id}")
     @ApiOperation(value = "删除职位", notes = "根据 id 删除职位")
-    @ApiImplicitParam(name = "id", value = "职位 id", required = true)
+//    @ApiImplicitParam(name = "id", value = "职位 id", required = true)
     public RespBean deletePosition(@PathVariable Integer id) {
         if(positionService.deletePosition(id) == 1 ) {
             return RespBean.ok("删除成功");
