@@ -20,4 +20,12 @@ public interface PositionMapper {
 
     @Select("select * from position")
     List<Position> selectAllPosition();
+
+    //    @Delete({"<script> ",
+//            "delete from position where id in ",
+//            "<foreach collection='array' item='item' open='('  separator=',' close=')'>",
+//            "#{item}",
+//            "</foreach>",
+//            "</script>" })
+    Integer deleteByIds(Integer[] ids);
 }

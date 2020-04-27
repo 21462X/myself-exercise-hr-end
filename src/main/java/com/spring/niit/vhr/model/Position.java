@@ -18,7 +18,7 @@ public class Position {
      */
     private String name;
 
-    @JsonFormat(pattern = "yyyy-MM-dd hh:hh",timezone = "Asia/Shanghai")
+    @JsonFormat(pattern = "yyyy-MM-dd hh:hh", timezone = "Asia/Shanghai")
     private Date createdate;
 
     private Boolean enabled;
