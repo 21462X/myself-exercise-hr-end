@@ -42,6 +42,12 @@
       </if>
     </trim>
   </insert>
+  <insert id="insertRecord" parameterType="java.lang.Integer">
+    insert into menu_role(mid, rid) values
+    <foreach collection="mids" separator="," item="mid">
+      (#{mid}, #{rid})
+    </foreach>
+  </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.spring.niit.vhr.model.MenuRole">
     update menu_role
     <set>

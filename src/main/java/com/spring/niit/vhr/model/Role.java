@@ -1,5 +1,6 @@
 package com.spring.niit.vhr.model;
 
+import io.swagger.annotations.ApiModel;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -9,6 +10,7 @@ import java.io.Serializable;
  * @author 
  */
 @Data
+@ApiModel(value = "角色实体类", description = "权限菜单角色的描述")
 public class Role implements Serializable {
     private Integer id;
 

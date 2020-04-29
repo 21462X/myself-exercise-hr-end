@@ -120,7 +120,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         out.close();
                     }
                 })
-//                .permitAll()
+                .permitAll()
                 .and()
                 .csrf().disable();
     }
